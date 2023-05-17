@@ -1,18 +1,17 @@
 # Installation du projet
 
-##
-Prérequis : 
+Prérequis :
 - avoir Docker installer et pouvoir utiliser la commande `docker-compose`
 - se positioner dans le dossier du projet
 
-## Docker
+**Docker**
 
 Lancer la commande suivante :
 ```bash
 docker-compose -f ./docker-compose.yml up -d --force-recreate --build
 ```
 
-## Base de données
+**Base de données**
 
 Accéder au docker db :
 ```bash
@@ -28,7 +27,7 @@ Il faut insérer les données de tests :
 sudo docker exec -i blissim_db_1 mysql -uroot -proot blissim < www/db.sql 
 ```
 
-## Site
+**Site**
 
 Accéder au docker web :
 ```bash
@@ -40,7 +39,7 @@ On lance composer :
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer | composer install
 ```
 
-## Tester
+**Tester**
 
 Le lien pour accéder au projet : http://0.0.0.0:88/
 
