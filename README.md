@@ -31,7 +31,7 @@ docker exec -i blissim_db_1 mysql -uroot -proot blissim < www/db.sql
 
 Accéder au docker web :
 ```bash
-sudo docker exec -i blissim_web_1 bash
+docker exec -i blissim_web_1 bash
 ```
 
 On lance composer :
