@@ -24,7 +24,7 @@ CREATE DATABASE `blissim`;
 
 Il faut insérer les données de tests :
 ```bash
-sudo docker exec -i blissim_db_1 mysql -uroot -proot blissim < www/db.sql 
+docker exec -i blissim_db_1 mysql -uroot -proot blissim < www/db.sql 
 ```
 
 **Site**
